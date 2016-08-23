@@ -1,0 +1,18 @@
+h1 {
+	color: orangered;
+	text-align: center;
+}
+p {
+	color: navy;
+	text-align: center;
+}
+span {
+	text-decoration: underline;
+}
+ img {
+ 	width: 300px;
+ 	border:4px double lime;
+ }
+ article {
+ 	text-align: center;
+ }
