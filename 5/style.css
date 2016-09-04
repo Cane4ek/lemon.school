@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+	background-color: lightcyan;
+}
+.portfolio-item {
+	position: relative;
+	float: left;
+	width: 300px;
+	border: 1px solid lightseagreen;
+	margin: 0px 25px 0px 25px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.portfolio-item img {
+	width: 100%;
+	display: block;
+}
+.hover {
+	position: absolute;
+	background: url(images/image1.jpg) no-repeat 0 0;
+	background-size: 300px 325px;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	right: -100%;
+	padding-top: 20px;
+	transition: all .5s;
+}
+
+.about {
+	padding: 0px 25px 25px 25px;
+}
+.portfolio-item:hover .hover {
+	top: 0;
+	right: 0;
+}
+header {
+	height: 40px;
+	background-color: lightseagreen;
+	width: 100%;
+	position: fixed;
+	border-radius: 0 0 10px 10px;
+	text-align: right;
+	padding-right: 20px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+ul.menu {
+	letter-spacing: -5px;
+}
+ul.menu > li {
+	display: inline-block;
+	width: 12.5%;
+	letter-spacing: normal;
+	position: relative;
+}
+li a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 100%;
+	line-height: 40px;
+}
+footer {
+	position: absolute;
+	height: 40px;
+	background-color: lightseagreen;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+	padding-right: 20px;
+}
+ul.menu1 {
+	letter-spacing: -5px;
+}
+ul.menu1>li {
+	display: inline-block;
+	margin-right: 10px;
+	letter-spacing: normal;
+	position: relative;
+}
+li.name {
+	color: white;
+}
+.leftimg {
+	float: left;
+	margin: 0;
+}
+img {
+	border-radius: 5px;
+	float: right;
+	margin: 20px;
+}
+.contacts {
+	padding: 30px 20px 4px 40px;
+	text-align: left;
+}
+ul>li {
+	color: black;
+	display: block;
+}
+h1 {
+	margin-top: 50px;
+	text-align: left; 
+}
+.communication {
+	border-top:1px solid black;
+	padding-top:10px;
+
+}
+.wrapper {
+	width: 1200px;
+	border-left: 2px dotted black;
+	border-right: 2px dotted black;
+	margin: 0 auto;
+}
+.communication > ul {
+	font-size: 22px;
+	font-weight: bold;
+}
+.vk {
+	color: black;
+	line-height: 1 !important
+}
+.communication a:hover {
+	color: darkcyan;
+}
+li.vk {
+	padding: -1px;
+}
+.grid {
+	width: 1200px;
+	margin: 0 auto;
+}
+.product, 
+.product1,
+.product2,
+.product3{
+	width: 180px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 lightseagreen;
+	float: left;
+	margin: 20px 0px 20px 20px;
+}
+.grid::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.product img,
+.product1 img,
+.product2 img,
+.product3 img {
+	margin: 0 auto;
+	box-shadow: 0 0 10px 0 lightseagreen;
+}
+h2 {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+li.p {
+	text-align: center;
+}
