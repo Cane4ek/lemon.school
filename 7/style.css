@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+.level {
+	width: 200px;
+	height: 100px;
+	border: 4px solid black;
+	margin-top: 50px;
+	margin-left: 50px;
+	position: relative;
+}
+.level::before,
+.level::after{
+	content: '';
+	position: absolute;
+}
+.level::after{
+	width: 20px;
+	height: 40px;
+	background-color: black;
+	right: -20px;
+	top: 28px;
+}
+.level::before{
+	height: 100%;
+}
+.battery1::before{
+	width: 33%;
+	background-color: red;
+}
+.battery2::before{
+	width: 66%;
+	background-color: yellow;
+}
+.battery3::before {
+	width: 100%;
+	background-color: green;
+}
+.battery-block h1{
+	text-align: center;
+}
+.battery-block h2 {
+	margin-left: 50px;
+	margin-bottom: -40px;
+}
+.cut-edge h2 {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.container {
+	height: 100px;
+	width: 200px;
+	background-color: green;
+	margin-left: 50px;
+	margin-top: 10px;
+	position: relative;
+}
+.container p {
+	padding: 15px;
+	color: white;
+}
+.container::after,
+.container::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	background-color: green;
+	bottom: 10px;
+	top: 10px;
+}
+.container::after {
+	left: -10px;
+}
+.container::before {
+	right: -10px;
+}
+.buatifull-button h2 {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.button {
+	width: 200px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #ffa1c2;
+	margin-left: 50px;
+	margin-top: 20px;
+	border: 4px double white;
+	background: linear-gradient(to bottom, #FFA1C2 0%, #FFA1C2 25%, #FFC4D7 50%, #FFA1C2 75%, #FFA1C2 100%);
+	box-shadow: 0 0 20px 0;
+}
+.button p {
+	margin-left: 60px;
+	margin-top: 5px;
+	font-size: 30px;
+	display: inline-block;
+	color: black;
+}
