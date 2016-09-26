@@ -1,0 +1,61 @@
+@import "stylesheet.css";
+*{
+	font-family: 'montserrat light', arial;
+	box-sizing: border-box;
+}
+body {
+	background-image: linear-gradient(90deg, #ffffff, #e5e5e5);
+}
+table {
+	border-collapse: collapse;
+	margin: 100px auto 0;
+	background-color: #fff;
+	width: 1140px;
+	box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
+	padding-left: 31px;
+	min-height: 300px;
+	max-height: 324px;
+}
+.head {
+	text-transform: uppercase;
+	color: #dc1f26;
+	padding-top: 23px;
+	padding-left: 27px;
+	font-weight: bold;
+}
+td{
+	padding-left: 31px;
+}
+th {
+	color: #dc1f26;
+	text-align: left;
+	padding: 22px 0 16px 27px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f1f1f1;
+}
+tr:nth-child(even) {
+	background-color: #fbfbfb;
+}
+.item-name {
+	width: 920px;
+	color: #6d6d6d;
+	border-right: 1px solid #f1f1f1;
+	transition: all .4s ease;
+}
+tr:hover:not(.head) {
+	background-color: #d4d4d4;
+}
+.item-name:hover {
+	color:#dc1f26;
+}
+.download a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #dc1f26;
+}
+.download a:hover {
+	border-bottom: 2px solid;
+}
+.download {
+	padding: 14px 0 8px 23px;
+}
